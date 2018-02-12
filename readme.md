@@ -6,7 +6,7 @@
 ## 安装
 使用composer安装包
 ```shell
-composer require shrimp/elastic-scout
+composer require shrimpliu/elastic-scout
 ```
 添加provider到`config/app.php`配置中(Laravel 5.4及以下版本需要)
 ```php
