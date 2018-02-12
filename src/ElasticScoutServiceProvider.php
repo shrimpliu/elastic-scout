@@ -1,11 +1,11 @@
 <?php
 
-namespace Shrimp\ElasticScout;
+namespace ShrimpLiu\ElasticScout;
 
 use Elasticsearch\ClientBuilder;
 use Illuminate\Support\ServiceProvider as BaseProvider;
 use Laravel\Scout\EngineManager;
-use Shrimp\ElasticScout\Console\MapCommand;
+use ShrimpLiu\ElasticScout\Console\MapCommand;
 
 class ElasticScoutServiceProvider extends BaseProvider
 {

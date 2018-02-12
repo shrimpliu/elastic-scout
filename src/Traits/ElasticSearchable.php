@@ -1,10 +1,10 @@
 <?php
 
-namespace Shrimp\ElasticScout\Traits;
+namespace ShrimpLiu\ElasticScout\Traits;
 
 use Laravel\Scout\EngineManager;
 use Laravel\Scout\Searchable;
-use Shrimp\ElasticScout\ElasticBuilder as Builder;
+use ShrimpLiu\ElasticScout\ElasticBuilder as Builder;
 
 trait ElasticSearchable
 {

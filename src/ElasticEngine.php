@@ -1,6 +1,6 @@
 <?php
 
-namespace Shrimp\ElasticScout;
+namespace ShrimpLiu\ElasticScout;
 
 use Elasticsearch\Common\Exceptions\Missing404Exception;
 use Laravel\Scout\Builder;

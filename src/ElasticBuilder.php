@@ -1,6 +1,6 @@
 <?php
 
-namespace Shrimp\ElasticScout;
+namespace ShrimpLiu\ElasticScout;
 
 use Illuminate\Support\Arr;
 use Illuminate\Pagination\Paginator;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Shrimp\ElasticScout\Console;
+namespace ShrimpLiu\ElasticScout\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Events\Dispatcher;

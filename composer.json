@@ -1,5 +1,5 @@
 {
-    "name": "shrimp/elastic-scout",
+    "name": "shrimpliu/elastic-scout",
     "description": "Elastic Driver for Laravel Scout",
     "keywords": ["laravel", "scout", "elasticsearch", "elastic"],
     "require": {
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Shrimp\\ElasticScout\\": "src/"
+            "ShrimpLiu\\ElasticScout\\": "src/"
         }
     },
     "suggest": {
@@ -24,7 +24,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Shrimp\\ElasticScout\\ElasticScoutServiceProvider"
+                "ShrimpLiu\\ElasticScout\\ElasticScoutServiceProvider"
             ]
         }
     },
