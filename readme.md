@@ -4,15 +4,25 @@
 - 支持随机排序
 - 支持ES搜索语法
 ## 安装
+使用composer安装包
 ```shell
 composer require shrimp/elastic-scout
+```
+添加provider到`config/app.php`配置中(Laravel 5.4及以下版本需要)
+```php
+'providers' => [
+
+    ...
+
+    ShrimpLiu\ElasticScout\ElasticScoutServiceProvider::class,
+]
 ```
 ## 配置
 ### 配置索引
 默认索引与模型表名相同，也可以通过覆盖`searchableAs`方法来自定义。
 ```php
 <?php
-use Shrimp\ElasticScout\Traits\ElasticSearchable;
+use ShrimpLiu\ElasticScout\Traits\ElasticSearchable;
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
@@ -34,7 +44,7 @@ class Post extends Model
 默认，索引会从模型的`toArray`方法来读取数据，可以覆盖`toSearchableArray`方法来自定义索引数据。
 ```php
 <?php
-use Shrimp\ElasticScout\Traits\ElasticSearchable;
+use ShrimpLiu\ElasticScout\Traits\ElasticSearchable;
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
@@ -71,7 +81,7 @@ class Post extends Model
 默认，同步到索引时，会根据数据自动选择字段类型，可以覆盖`customSearchProperties`方法来自定义字段类型。
 ```php
 <?php
-use Shrimp\ElasticScout\Traits\ElasticSearchable;
+use ShrimpLiu\ElasticScout\Traits\ElasticSearchable;
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
